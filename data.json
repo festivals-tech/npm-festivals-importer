@@ -1,0 +1,58 @@
+[
+  {
+    "kp_id": "437157",
+    "kp_tytul": "Wystawa prac Rextorn Metalwork i Trollsky",
+    "kp_prowadzacy": "Tomasz \"Rextorn\" Grabarczyk (Rextorn Metalwork i Trollsky)",
+    "kp_opis": "Nazywamy się Rextorn, jesteśmy pracownią wyrobów repuserskich i zaprezentujemy przed Wami nasze najbardziej znane prace: godło rodu Starków z Gry o Tron, smocze jajo Daenerys, medalion Wiedźmina z autografem Sapkowskiego oraz wiele innych wyrobów naszego autorstwa. W tym roku towarzyszyć nam będzie znany ze swoich filmów o knifemakingu Trollsky Custom Knives, który zaprezentuje Wam cały arsenał swoich słynnych noży.",
+    "kp_data": "2015-04-24 13:30:00",
+    "kp_dlugosc": "2880",
+    "kp_sala": "Pawilon 7 (7)",
+    "kp_kon_id": "18",
+    "kp_blok": "Festiwalowy",
+    "kp_key": "18_4915",
+    "kp_ulubiony": "",
+    "step": 0
+  },
+  {
+    "kp_id": "437162",
+    "kp_tytul": "Rock Band",
+    "kp_prowadzacy": "Marta \"Rekin\" Babacz, Łukasz \"Pacyf\" Pona, Rafał \"Acrith\" Krawczak (Wakou Rock Band)",
+    "kp_opis": "Rock Band jest grą muzyczną, w której przy pomocy kontrolerów wzorowanych na prawdziwych instrumentach i mikrofonach, wcielicie się w rolę zespołu muzycznego.Grać możecie w godzinach 9-23.",
+    "kp_data": "2015-04-24 13:30:00",
+    "kp_dlugosc": "2880",
+    "kp_sala": "RockBand (8a)",
+    "kp_kon_id": "18",
+    "kp_blok": "Gier elektronicznych",
+    "kp_key": "18_5016",
+    "kp_ulubiony": "",
+    "step": 1
+  },
+  {
+    "kp_id": "437090",
+    "kp_tytul": "Progresywne elementy kanonu i fandomu Marvela",
+    "kp_prowadzacy": "Katarzyna \"kasssumi\" Maciejewska",
+    "kp_opis": "Kiedy kolor skóry bohatera jest jego nieodłączną cechą? Czy orientacja seksualna definiuje postać? Czy slash i feminizm wykluczają się wzajemnie? Dlaczego powinniśmy otworzyć się na nowe możliwości?",
+    "kp_data": "2015-04-26 15:00:00",
+    "kp_dlugosc": "50",
+    "kp_sala": "Rejestrowana 1 (14, I p.)",
+    "kp_kon_id": "18",
+    "kp_blok": "Komiksowy",
+    "kp_key": "18_4360",
+    "kp_ulubiony": "",
+    "step": 7
+  },
+  {
+    "kp_id": "437104",
+    "kp_tytul": "[Panel] Czy książka elektroniczna ma przyszłość?",
+    "kp_prowadzacy": "Izabela Sadowska, Anna Misztak, Gerard Kościelski, Jeremiasz \"Jerry\" Bremer, Tomasz Fijałkowski (Lubimyczytac.pl, Wydawnictwo Miejskie)",
+    "kp_opis": "Podczas tego panelu spróbujemy się dowiedzieć jak, zdaniem pisarzy i wydawców, będziemy czytać książki za kilka, kilkanaście lat. Czy e-booki zdominują rynek, czy znikną z niego całkowicie w miarę ogólnego spadku czytelnictwa... czy może, wykorzystując bogactwo nowych technologii, wyniosą książkę na zupełnie nowy, cyfrowy poziom, tak że niedługo zapomnimy że książki miały zapach?",
+    "kp_data": "2015-04-26 15:30:00",
+    "kp_dlugosc": "50",
+    "kp_sala": "Literacka 1 (15)",
+    "kp_kon_id": "18",
+    "kp_blok": "Literacki",
+    "kp_key": "18_5242",
+    "kp_ulubiony": "",
+    "step": 9
+  }
+]
