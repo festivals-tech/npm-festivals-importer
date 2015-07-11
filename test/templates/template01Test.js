@@ -3,11 +3,9 @@ var should = chai.should();
 
 var template01 = require('../../lib/templates/template01');
 
-var moment = require('moment');
-
 describe('template01 test', function () {
 
-  var testData = [
+  const testData = [
     {
       "kp_id": "437157",
       "kp_tytul": "Wystawa prac Rextorn Metalwork i Trollsky",
@@ -67,7 +65,7 @@ describe('template01 test', function () {
   ];
 
   var result = template01.handle(testData);
-  console.dir(result, {depth: null});
+  //console.dir(result, {depth: null});
 
   it('should import example', function (done) {
 
