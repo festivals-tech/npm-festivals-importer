@@ -80,10 +80,12 @@ describe('template01 test', function () {
     result.should.have.deep.property('events[0].duration.startAt', '2015-04-24T11:30:00.000Z');
     result.should.have.deep.property('events[0].duration.finishAt', '2015-04-26T11:30:00.000Z');
     result.should.have.deep.property('events[0].places[0].name', '7');
-    result.should.have.deep.property('events[0].places[1].parent', '7');
+    result.should.have.deep.property('events[0].places[1].parent.name', '7');
+    result.should.have.deep.property('events[0].places[1].parent.parent', null);
     result.should.have.deep.property('events[0].places[1].name', 'Pawilon 7');
 //result.should.have.deep.property('events[0].places[0].openingTimes', []);
-    result.should.have.deep.property('events[0].category', 'Festiwalowy');
+    result.should.have.deep.property('events[0].categories[0].name', 'Festiwalowy');
+    result.should.have.deep.property('events[0].categories[0].parent', null);
 
     done();
   });
@@ -102,10 +104,12 @@ describe('template01 test', function () {
     result.should.have.deep.property('events[1].duration.startAt', '2015-04-24T11:30:00.000Z');
     result.should.have.deep.property('events[1].duration.finishAt', '2015-04-26T11:30:00.000Z');
     result.should.have.deep.property('events[1].places[0].name', '8a');
-    result.should.have.deep.property('events[1].places[1].parent', '8a');
+    result.should.have.deep.property('events[1].places[1].parent.name', '8a');
+    result.should.have.deep.property('events[1].places[1].parent.parent', null);
     result.should.have.deep.property('events[1].places[1].name', 'RockBand');
 //result.should.have.deep.property('events[1].places.openingTimes', []);
-    result.should.have.deep.property('events[1].category', 'Gier elektronicznych');
+    result.should.have.deep.property('events[1].categories[0].name', 'Gier elektronicznych');
+    result.should.have.deep.property('events[1].categories[0].parent', null);
 
     done();
   });
@@ -120,12 +124,13 @@ describe('template01 test', function () {
     result.should.have.deep.property('events[2].duration.startAt', '2015-04-26T13:00:00.000Z');
     result.should.have.deep.property('events[2].duration.finishAt', '2015-04-26T13:50:00.000Z');
     result.should.have.deep.property('events[2].places[0].name', '14');
-    result.should.have.deep.property('events[2].places[1].parent', '14');
+    result.should.have.deep.property('events[2].places[1].parent.name', '14');
     result.should.have.deep.property('events[2].places[1].name', 'I p.');
-    result.should.have.deep.property('events[2].places[2].parent', 'I p.');
+    result.should.have.deep.property('events[2].places[2].parent.name', 'I p.');
     result.should.have.deep.property('events[2].places[2].name', 'Rejestrowana 1');
 //result.should.have.deep.property('events[2].places.openingTimes', []);
-    result.should.have.deep.property('events[2].category', 'Komiksowy');
+    result.should.have.deep.property('events[2].categories[0].name', 'Komiksowy');
+    result.should.have.deep.property('events[2].categories[0].parent', null);
 
     done();
   });
@@ -149,10 +154,11 @@ describe('template01 test', function () {
     result.should.have.deep.property('events[3].duration.startAt', '2015-04-26T13:30:00.000Z');
     result.should.have.deep.property('events[3].duration.finishAt', '2015-04-26T14:20:00.000Z');
     result.should.have.deep.property('events[3].places[0].name', '15');
-    result.should.have.deep.property('events[3].places[1].parent', '15');
+    result.should.have.deep.property('events[3].places[1].parent.name', '15');
     result.should.have.deep.property('events[3].places[1].name', 'Literacka 1');
 //result.should.have.deep.property('events[3].places.openingTimes', []);
-    result.should.have.deep.property('events[3].category', 'Literacki');
+    result.should.have.deep.property('events[3].categories[0].name', 'Literacki');
+    result.should.have.deep.property('events[3].categories[0].parent', null);
     result.should.have.deep.property('events[3].tags[0]', 'panel');
 
     done();
