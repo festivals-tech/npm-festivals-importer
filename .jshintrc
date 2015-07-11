@@ -1,4 +1,5 @@
 {
+  "esnext":     true,
   "bitwise":    false,
   "asi":        false,
   "browser":    false,
