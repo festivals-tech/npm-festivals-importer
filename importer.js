@@ -3,6 +3,7 @@ var fs = require('fs');
 var program = require('commander');
 var meta = require('./lib/meta');
 var index = require('./lib/index');
+var moment = require('moment-timezone');
 var template = function () {
   throw new Error('Template not set');
 };
@@ -13,6 +14,7 @@ program
   .option('-f, --file [file]', 'Path to json data file', 'data.json')
   .option('-t, --template [template]', 'template file name', './lib/templates/template01.js')
   .option('-n, --name [name]', 'festival name', 'festival-name')
+  .option('-tz, --timezone [timezone]', 'timezone for dates import', 'Europe/Warsaw')
   .parse(process.argv);
 
 if (!program.file) {
@@ -28,6 +30,8 @@ if (!program.name) {
 }
 
 template = require(program.template);
+
+moment.tz.setDefault(program.timezone);
 
 fs.readFile(program.file, function (err, data) {
   if (err) {

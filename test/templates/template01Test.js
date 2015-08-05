@@ -1,5 +1,7 @@
 var chai = require('chai');
 var should = chai.should();
+var moment = require('moment-timezone');
+moment.tz.setDefault('Europe/Warsaw');  //set for tests
 
 var template01 = require('../../lib/templates/template01');
 
