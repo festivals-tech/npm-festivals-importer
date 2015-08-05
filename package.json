@@ -1,6 +1,6 @@
 {
   "name": "festivals-importer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Festivals importer.",
   "main": "./importer.js",
   "dependencies": {
@@ -53,8 +53,8 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "festivals-importer@0.1.0",
-  "_from": "festivals-importer@^0.1.0",
+  "_id": "festivals-importer@0.1.1",
+  "_from": "festivals-importer@^0.1.1",
   "directories": {
     "test": "test"
   }
