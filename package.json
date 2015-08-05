@@ -8,7 +8,7 @@
     "async": "^1.3.0",
     "commander": "^2.8.1",
     "config": "^1.14.0",
-    "festivals-client": "^0.1.0",
+    "festivals-client": "^0.1.1",
     "festivals-model": "^0.1.4",
     "json-mapper": "0.0.9",
     "moment": "^2.10.3",

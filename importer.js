@@ -43,7 +43,9 @@ fs.readFile(program.file, function (err, data) {
   //console.dir(json, {depth: null});
 
   index.importFestival(program.name, template, json, function (err, result) {
+
     if (err) {
+      console.log(err);
       throw err;
     }
 
