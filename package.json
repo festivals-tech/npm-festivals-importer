@@ -11,7 +11,7 @@
     "festivals-client": "^0.1.1",
     "festivals-model": "^0.1.4",
     "json-mapper": "0.0.9",
-    "moment": "^2.10.3",
+    "moment-timezone": "^0.4.0",
     "request": "^2.58.0",
     "winston": "^1.0.1",
     "winston-loggly": "^1.1.0"
