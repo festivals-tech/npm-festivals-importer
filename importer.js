@@ -49,10 +49,11 @@ fs.readFile(program.file, function (err, data) {
   index.importFestival(program.name, template, json, function (err, result) {
 
     if (err) {
-      console.log(err);
+      console.log('err', err);
       throw err;
     }
 
+    console.log('result');
     console.dir(result, {depth: null});
   });
 });
