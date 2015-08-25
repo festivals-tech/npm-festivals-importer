@@ -15,6 +15,7 @@ program
   .option('-t, --template [template]', 'template file name', './lib/templates/template01.js')
   .option('-n, --name [name]', 'festival name', 'festival-name')
   .option('-tz, --timezone [timezone]', 'timezone for dates import', 'Europe/Warsaw')
+  .option('-tp, --type [type]', 'type of import', 'festival')
   .parse(process.argv);
 
 if (!program.file) {
@@ -46,7 +47,19 @@ fs.readFile(program.file, function (err, data) {
 
   //console.dir(json, {depth: null});
 
-  index.importFestival(program.name, template, json, function (err, result) {
+  var func = function () {
+  };
+
+  switch (program.type) {
+    case 'festival':
+      func = index.importFestival;
+      break;
+    case 'news':
+      func = index.importNews;
+      break;
+  }
+
+  func(program.name, template, json, function (err, result) {
 
     if (err) {
       console.log('err', err);
