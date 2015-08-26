@@ -11,6 +11,7 @@
     "config": "^1.15.0",
     "festivals-client": "^0.1.2",
     "festivals-model": "^0.1.5",
+    "google-spreadsheet": "^1.0.1",
     "json-mapper": "0.0.9",
     "moment-timezone": "^0.4.0",
     "request": "^2.60.0",
