@@ -3,6 +3,7 @@ var fs = require('fs');
 var program = require('commander');
 var meta = require('./lib/meta');
 var index = require('./lib/index');
+var authorize = require('./lib/authorize');
 var moment = require('moment-timezone');
 var template = function () {
   throw new Error('Template not set');
@@ -16,6 +17,8 @@ program
   .option('-n, --name [name]', 'festival name', 'festival-name')
   .option('-tz, --timezone [timezone]', 'timezone for dates import', 'Europe/Warsaw')
   .option('-tp, --type [type]', 'type of import', 'festival')
+  .option('-u, --user [user]', 'user name')
+  .option('-p, --password [password]', 'user name')
   .parse(process.argv);
 
 if (!program.file) {
@@ -30,43 +33,53 @@ if (!program.name) {
   throw new Error('Invalid festival name: ' + program.name);
 }
 
+if (!program.user || !program.password) {
+  throw new Error('user and password are required to import festival');
+}
+
 template = require(program.template);
 
 moment.tz.setDefault(program.timezone);
 
-fs.readFile(program.file, function (err, data) {
+authorize.authorize(program.user, program.password, function (err, token) {
   if (err) {
     throw err;
   }
 
-  if (!data) {
-    throw new Error('Invalid json data file: ' + program.file);
-  }
-
-  var json = JSON.parse(data);
-
-  //console.dir(json, {depth: null});
-
-  var func = function () {
-  };
-
-  switch (program.type) {
-    case 'festival':
-      func = index.importFestival;
-      break;
-    case 'news':
-      func = index.importNews;
-      break;
-  }
-
-  func(program.name, template, json, function (err, result) {
-
+  fs.readFile(program.file, function (err, data) {
     if (err) {
-      console.log('err', err);
       throw err;
     }
 
-    console.log('result');
-    console.dir(result, {depth: null});
+    if (!data) {
+      throw new Error('Invalid json data file: ' + program.file);
+    }
+
+    var json = JSON.parse(data);
+
+    //console.dir(json, {depth: null});
+
+    var func = function () {
+    };
+
+    switch (program.type) {
+      case 'festival':
+        func = index.importFestival;
+        break;
+      case 'news':
+        func = index.importNews;
+        break;
+    }
+
+    func(program.name, template, json, token, function (err, result) {
+
+      if (err) {
+        console.log('err', err);
+        throw err;
+      }
+
+      console.log('result');
+      console.dir(result, {depth: null});
+    });
   });
 });

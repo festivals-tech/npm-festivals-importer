@@ -7,6 +7,21 @@
     "accept": "application/vnd.festivals.v1+json",
     "ua": "functional-test"
   },
+  "credentials": {
+    "clientId": "",
+    "clientSecret": "",
+    "clientOptions": {
+      "hostname": "festivals.tech",
+      "port": 443,
+      "path": "/oauth/token",
+      "method": "POST",
+      "rejectUnauthorized": false,
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Authorization" : "Basic "
+      }
+    }
+  },
   "resources": {
     "categories": "/api/festivals/%s/categories"
   }
