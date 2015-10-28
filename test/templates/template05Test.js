@@ -27,7 +27,7 @@ describe('template04 importer test', function () {
   it('should import two events', function (done) {
     var body = '<div id="main"><p><strong>MAIN</strong></p> <p><strong>Fua Fua Rythm (PIĄTEK 20:00 – 21:00)</strong></p> <p>Kitki, zakolanówki, krótkie spódniczki i taniec! Oto składniki potrzebne do stworzenia idealnego show! Zapraszamy na pokaz tańca odottemita w stylu prosto z Kraju Kwitnącej Wiśni~!</p> <p><br> &nbsp;</p> <p><strong>Disco (SOBOTA 21:00 – 22:00)</strong></p> <p>Co jest najlepsze pierwszej nocy konwentu? Impreza!</p> <p><br> &nbsp;</p> <p><strong>Śmierć w Edo – LARP (NIEDZIELA 09:00 – 13:00)</strong></p> <p>Ilość osób: ~ 14 (min. 10)</p> <p>Poziom trudności: średni</p> <p>To nie jest LARP o samuraju w łódce! Smaczek dla tych, którzy chcieliby poczuć się jak brawdziwi mieszkańcy Japonii klasycznej (czyli bez mechów, wielkookich lolitek i zboczeńców w pociągach)... a przynajmniej trochę poudawać samurajów.</p> <p>Prowadzący: Marcin Tarka</p> <p><br> &nbsp;</p> </div>';
     template04.parseEvents(body, function (err, results) {
-        console.log(results);
+        //console.log(results);
 
         var first = results[0];
         //first.should.have.deep.property('tags[0]', '1');

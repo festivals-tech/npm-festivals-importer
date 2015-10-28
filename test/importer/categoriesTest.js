@@ -4,7 +4,7 @@ var expect = chai.expect;
 
 var CategoriesImporter = require('../../lib/importer/categories').CategoriesImporter;
 
-describe('categories test', function () {
+describe('categories importer test', function () {
 
   const festivalId = 'festivalId';
 
