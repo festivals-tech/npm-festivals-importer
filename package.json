@@ -31,10 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/festivals-platform/npm-festivals-importer.git"
+    "url": "git+https://github.com/festivals-tech/npm-festivals-importer.git"
   },
   "bugs": {
-    "url": "https://github.com/festivals-platform/npm-festivals-importer/issues"
+    "url": "https://github.com/festivals-tech/npm-festivals-importer/issues"
   },
   "keywords": [
     "festival",
@@ -49,7 +49,7 @@
     "email": "zenedith@wp.pl"
   },
   "license": "MIT",
-  "homepage": "https://github.com/festivals-platform/npm-festivals-importer",
+  "homepage": "https://github.com/festivals-tech/npm-festivals-importer",
   "engines": {
     "node": ">=0.10.0"
   },
