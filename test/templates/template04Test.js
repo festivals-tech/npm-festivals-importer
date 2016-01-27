@@ -7,18 +7,18 @@ describe('template04 importer test', function () {
   var template04 = require('../../lib/templates/template04');
 
   it('should import single event', function (done) {
-    var body = '<p><strong>MAIN</strong></p> <p><strong>Fua Fua Rythm (PIĄTEK 20:00 – 01:00)</strong></p> <p>Kitki, zakolanówki, krótkie spódniczki i taniec! Oto składniki potrzebne do stworzenia idealnego show! Zapraszamy na pokaz tańca odottemita w stylu prosto z Kraju Kwitnącej Wiśni~!</p> <p><br> &nbsp;</p>';
-    template04.parseEvent(body, function (err, result) {
-        //console.log(result);
-        //result.should.have.deep.property('tags[0]', '1');
-        result.should.have.deep.property('name', 'Fua Fua Rythm');
-        result.should.have.deep.property('description', 'MAIN  Kitki, zakolanówki, krótkie spódniczki i taniec! Oto składniki potrzebne do stworzenia idealnego show! Zapraszamy na pokaz tańca odottemita w stylu prosto z Kraju Kwitnącej Wiśni~!');
-        //result.should.have.deep.property('authors[0].name', 'Organizatorzy Polconu 2015');
-        result.should.have.deep.property('minutes', 300);
-        result.should.have.deep.property('duration.startAt', '2015-08-28T18:00:00.000Z');
-        result.should.have.deep.property('duration.finishAt', '2015-08-28T23:00:00.000Z');
-        result.should.have.deep.property('categories[0].name', 'MAIN');
-        result.should.have.deep.property('places[0].name', 'MAIN');
+    var body = '<div id="main"><p><strong>MAIN</strong></p> <p><strong>Fua Fua Rythm (PIĄTEK 20:00 – 01:00)</strong></p> <p>Kitki, zakolanówki, krótkie spódniczki i taniec! Oto składniki potrzebne do stworzenia idealnego show! Zapraszamy na pokaz tańca odottemita w stylu prosto z Kraju Kwitnącej Wiśni~!</p> <p><br> &nbsp;</p> </div>';
+    template04.parseEvents(body, function (err, results) {
+        var first = results[0];
+        //first.should.have.deep.property('tags[0]', '1');
+        first.should.have.deep.property('name', 'Fua Fua Rythm');
+        first.should.have.deep.property('description', 'MAIN  Kitki, zakolanówki, krótkie spódniczki i taniec! Oto składniki potrzebne do stworzenia idealnego show! Zapraszamy na pokaz tańca odottemita w stylu prosto z Kraju Kwitnącej Wiśni~!');
+        //first.should.have.deep.property('authors[0].name', 'Organizatorzy Polconu 2015');
+        first.should.have.deep.property('minutes', 300);
+        first.should.have.deep.property('duration.startAt', '2015-08-28T18:00:00.000Z');
+        first.should.have.deep.property('duration.finishAt', '2015-08-28T23:00:00.000Z');
+        first.should.have.deep.property('categories[0].name', 'MAIN');
+        first.should.have.deep.property('places[0].name', 'MAIN');
         done();
       }
     );
