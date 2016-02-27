@@ -27,23 +27,23 @@ npm test
 ## Dependencies
 
 - [assert-plus](https://github.com/mcavage/node-assert-plus): Extra assertions on top of node&#39;s assert module
-- [async](): Higher-order functions and common patterns for asynchronous code
+- [async](https://github.com/caolan/async): Higher-order functions and common patterns for asynchronous code
 - [cheerio](https://github.com/cheeriojs/cheerio): Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
-- [commander](): the complete solution for node.js command-line programs
+- [commander](https://github.com/tj/commander.js): the complete solution for node.js command-line programs
 - [config](https://github.com/lorenwest/node-config): Configuration control for production node deployments
-- [festivals-client](): Festivals client library.
+- [festivals-client](https://github.com/festivals-tech/npm-festivals-client): Festivals client library.
 - [google-spreadsheet](https://github.com/theoephraim/node-google-spreadsheet): Google Spreadsheet Data API -- simple interface to read/write rows + cells
 - [json-mapper](https://github.com/dregenor/jsonMapper): simple json mapper to
 - [moment-timezone](https://github.com/moment/moment-timezone): Parse and display moments in any timezone.
-- [request](): Simplified HTTP request client.
-- [winston](): A multi-transport async logging library for Node.js
+- [request](https://github.com/request/request): Simplified HTTP request client.
+- [winston](https://github.com/winstonjs/winston): A multi-transport async logging library for Node.js
 - [winston-loggly](https://github.com/indexzero/winston-loggly): A Loggly transport for winston
 
 ## Dev Dependencies
 
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
-- [chai](): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+- [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [rewire](https://github.com/jhnns/rewire): Easy dependency injection for node.js unit testing
 
 ## Changelog
@@ -54,7 +54,7 @@ npm test
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Zenedith
+Copyright (c) 2015-2016 Zenedith
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
