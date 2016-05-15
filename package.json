@@ -10,7 +10,7 @@
     "commander": "2.9.0",
     "config": "1.20.1",
     "festivals-client": "1.0.2",
-    "google-spreadsheet": "2.0.2",
+    "google-spreadsheet": "^2.0.3",
     "json-mapper": "0.0.10",
     "moment": "2.13.0",
     "moment-timezone": "0.5.4",
