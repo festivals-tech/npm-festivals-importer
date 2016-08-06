@@ -1,9 +1,11 @@
 #!/usr/bin/env node
+'use strict';
+
 var fs = require('fs');
+var config = require('config');
 var program = require('commander');
 var meta = require('./lib/meta');
 var index = require('./lib/index');
-var authorize = require('./lib/authorize');
 var moment = require('moment-timezone');
 var template = function () {
   throw new Error('Template not set');
@@ -37,49 +39,49 @@ if (!program.user || !program.password) {
   throw new Error('user and password are required to import festival');
 }
 
+if (!config.token) {
+  throw new Error('Missing config.token value');
+}
+
 template = require(program.template);
 
 moment.tz.setDefault(program.timezone);
 
-authorize.authorize(program.user, program.password, function (err, token) {
+fs.readFile(program.file, function (err, data) {
   if (err) {
     throw err;
   }
 
-  fs.readFile(program.file, function (err, data) {
-    if (err) {
-      throw err;
+  if (!data) {
+    throw new Error('Invalid json data file: ' + program.file);
+  }
+
+  var json = JSON.parse(data);
+
+  //console.dir(json, {depth: null});
+
+  var func = function () {
+  };
+
+  switch (program.type) {
+    case 'festival':
+      func = index.importFestival;
+      break;
+    case 'news':
+      func = index.importNews;
+      break;
+    default:
+      throw new Error('Unsupported program.type: ' + program.type);
+  }
+
+  func(program.name, template, json, config.token, function (funcErr, result) {
+
+    if (funcErr) {
+      console.log('err', funcErr);
+      throw funcErr;
     }
 
-    if (!data) {
-      throw new Error('Invalid json data file: ' + program.file);
-    }
-
-    var json = JSON.parse(data);
-
-    //console.dir(json, {depth: null});
-
-    var func = function () {
-    };
-
-    switch (program.type) {
-      case 'festival':
-        func = index.importFestival;
-        break;
-      case 'news':
-        func = index.importNews;
-        break;
-    }
-
-    func(program.name, template, json, token, function (err, result) {
-
-      if (err) {
-        console.log('err', err);
-        throw err;
-      }
-
-      console.log('result');
-      console.dir(result, {depth: null});
-    });
+    console.log('result');
+    console.dir(result, {depth: null});
   });
 });

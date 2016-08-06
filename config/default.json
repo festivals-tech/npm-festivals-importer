@@ -1,28 +1,8 @@
 {
   "client": {
-    "host1": "http://146.185.159.209",
-    "host2": "http://127.0.0.1:2997",
-    "host": "http://127.0.0.1:3000/api",
-    "host4": "https://festivals-app.herokuapp.com/api",
+    "host": "https://festivals.tech/api",
     "accept": "application/vnd.festivals.v1+json",
-    "ua": "functional-test"
-  },
-  "credentials": {
-    "clientId": "",
-    "clientSecret": "",
-    "clientOptions": {
-      "hostname": "festivals.tech",
-      "port": 443,
-      "path": "/oauth/token",
-      "method": "POST",
-      "rejectUnauthorized": false,
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Authorization" : "Basic "
-      }
-    }
-  },
-  "resources": {
-    "categories": "/api/festivals/%s/categories"
+    "ua": "festivals-importer",
+    "token": ""
   }
 }

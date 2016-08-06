@@ -11,3 +11,5 @@ test/
 *.iws
 .idea
 konwenty/
+release.sh
+config/test.json
