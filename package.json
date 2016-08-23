@@ -5,7 +5,7 @@
   "main": "./importer.js",
   "dependencies": {
     "async": "2.0.1",
-    "cheerio": "0.20.0",
+    "cheerio": "0.22.0",
     "commander": "2.9.0",
     "config": "1.21.0",
     "festivals-client": "1.1.0",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "istanbul": "0.4.4",
+    "istanbul": "0.4.5",
     "mocha": "3.0.2"
   },
   "scripts": {
