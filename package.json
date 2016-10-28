@@ -11,9 +11,9 @@
     "festivals-client": "1.1.0",
     "google-spreadsheet": "2.0.3",
     "json-mapper": "0.0.10",
-    "moment": "2.15.1",
+    "moment": "2.15.2",
     "moment-timezone": "0.5.7",
-    "request": "2.75.0",
+    "request": "2.76.0",
     "winston": "2.2.0",
     "winston-loggly": "1.3.1"
   },
