@@ -9,7 +9,7 @@ describe('template09 importer test', function () {
   it('should import', function (done) {
     template09.handle({}, function (err, result) {
         // console.log(result);
-        console.dir(result, {depth: null});
+        // console.dir(result, {depth: null});
         // result.should.have.deep.property('name', 'Rekonstrukcja - o co w tym chodzi?');
         // result.should.have.deep.property('description', '"Zabawa w żołnierzyki", "wyrzucanie kasy w błoto", "zabawa dla dzieci" - takie opinie najczęściej słyszy rekonstruktor od osób postronnych. Tymczasem do świata rekonstrukcji napływa coraz większa liczba ludzi, zmęczonych dotychczasowych nauczaniem historii w szkołach. "Rekują" średniowiecznych rycerzy, żołnierzy Napoleona, żołnierzy III Rzeszy czy tych współczesnych, walczących na misjach w Iraku czy Afganistanie. Od kilku lat zajmuję się tym ostatnim, a konkretnie - brytyjskimi jednostkami spadochronowymi. Pasja pociągnęła mnie do spędzenia niezliczonej liczby godzin w książkach i internecie, wydania fortuny na "śmierdzące" (w opinii domowników) fanty, odwiedziny jednostki w UK czy bieg z prawdziwymi weteranami. Opowiem o tym, czym jest rekonstrukcja i na czym polega oraz jak najlepiej zacząć "bawić" się w rekonstruowanie.');
         // result.should.have.deep.property('duration.startAt', '2016-04-09T11:30:00.000Z');

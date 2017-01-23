@@ -1,0 +1,10 @@
+.git
+node_modules
+config/test.json
+test
+coverage
+*.iml
+*.ipr
+*.iws
+.idea
+konwenty/

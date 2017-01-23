@@ -1,0 +1,8 @@
+# node_modules ignored by default
+node_modules/
+
+# other ignored directories
+coverage/
+test/
+public
+konwenty/
