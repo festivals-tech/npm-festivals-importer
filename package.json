@@ -7,7 +7,7 @@
     "async": "2.1.4",
     "cheerio": "0.22.0",
     "commander": "2.9.0",
-    "config": "1.25.0",
+    "config": "1.25.1",
     "festivals-client": "1.1.0",
     "google-spreadsheet": "2.0.3",
     "json-mapper": "0.0.10",
