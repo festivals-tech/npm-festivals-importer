@@ -4,7 +4,7 @@
   "description": "Festivals importer.",
   "main": "./importer.js",
   "dependencies": {
-    "async": "2.1.4",
+    "async": "^2.1.5",
     "cheerio": "0.22.0",
     "commander": "2.9.0",
     "config": "1.25.1",
