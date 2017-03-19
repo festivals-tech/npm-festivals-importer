@@ -1073,7 +1073,11 @@ moment-timezone@0.5.11:
   dependencies:
     moment ">= 2.6.0"
 
-moment@2.17.1, "moment@>= 2.6.0":
+moment@2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.0.tgz#6cfec6a495eca915d02600a67020ed994937252c"
+
+"moment@>= 2.6.0":
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
@@ -1233,7 +1237,7 @@ repeating@^1.1.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@2.74.0, request@^2.69.0, request@~2.74.0:
+request@2.74.0, request@~2.74.0:
   version "2.74.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.74.0.tgz#7693ca768bbb0ea5c8ce08c084a45efa05b892ab"
   dependencies:
@@ -1285,7 +1289,7 @@ request@2.75.x:
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
 
-request@2.81.0, request@^2.72.0:
+request@2.81.0, request@^2.69.0, request@^2.72.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
